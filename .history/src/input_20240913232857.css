@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .text-red-500 {
+    color: red;
+} */
+
+
+@layer components{
+    .link{
+        @apply cursor-pointer hover:text-white hover:underline underline-offset-4 transition-all
+    }
+}
+
+/* (min-width) screen : > = 640px */
+
+@media screen and (min-width:640px) {
+    /* CSS */
+    .sub-title{
+        color:red;
+    }
+}
+
+/* Break point:640px (sm) , 768px (md) , 1024px(lg) 1536px (2xl)*/
+
+/* (max-width) screen: < = 640px */
+@media screen and (max-width:768px) {
+    /* CSS */
+    .sub-title{
+        color:green;
+    }
+}
+
+/* Style for the dots container */
+.slick-dots {
+    text-align: center;
+    bottom: -35px;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* Space between dots */
+  }
+  
+  /* Style for inactive dots */
+  .slick-dots li button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff; /* White background for inactive dots */
+    border: none;
+  }
+  
+  /* Style for active dot */
+  .slick-dots li.slick-active button {
+    background-color: #FF5EA3; /* Pink background for the active dot */
+  }
+  
